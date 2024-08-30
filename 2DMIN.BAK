@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[3][3] ={{10,2,3},{4,1,6},{7,8,9}},i,j,r=0,f=0,min;
+	clrscr();
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("a[%d]=%d\n",i,a[i][j]);
+		}
+		printf("\n");
+	}
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("%d ",a[i][j]);
+		}
+		printf("\n");
+	}
+	for(i=0;i<3;i++)
+	{
+		min = a[i][0];
+		for(j=0;j<3;j++)
+		{
+			if(min>a[i][j])
+			{
+				min=a[i][j];
+				r=i;
+				f=j;
+			}
+		}
+		printf("\n min :a[%d][%d]=%d",r,f,min);
+	}
+	getch();
+}

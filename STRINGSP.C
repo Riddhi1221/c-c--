@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char a[50],i;
+	int n;
+	clrscr();
+	printf("Enter string.. ");
+	gets(a);
+	puts(a);
+	for(i=0;a[i]!='\0';i++)
+	{
+		printf("\na[%d]=%c",i,a[i]);
+	}
+	n=0;
+	for(i=0;a[i]!='\0';i++)
+	{
+		if(a[i]>=33 && a[i]<47)
+		{
+			n++;
+		}
+	}
+	printf("\n space := %d",n);
+	getch();
+}

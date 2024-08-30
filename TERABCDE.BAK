@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,c,d,e,min;
+	clrscr();
+	printf("A=");
+	scanf("%d",&a);
+	printf("B=");
+	scanf("%d",&b);
+	printf("C=");
+	scanf("%d",&c);
+	printf("D=");
+	scanf("%d",&d);
+	printf("E=");
+	scanf("%d",&e);
+
+	//min = (a<b && a<c && a<d && a<e)?a:(b<c && b<d && b<e)? b:(c<d && c<e)?c:(d<e)?d:e;
+	min= a<b?a:a<c?a:a<d?a:a<e?a:b<c?b:b<d?b:b<e?b:c<d?c:c<e?c:d<e?d:e;
+	printf("%d",min);
+	getch();
+}

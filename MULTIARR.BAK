@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+class myClass
+{
+	public:
+	int n;
+	void getnum()
+	{
+		cout<<"enter number"<<endl;
+		cin>>n;
+	}
+};
+void main()
+{
+	clrscr();
+	myClass a[10];
+	int i;
+
+	for(i=0;i<5;i++)
+	{
+		a[i].getnum();
+	}
+	cout<<endl;
+	for(i=0;i<5;i++)
+	{
+		cout<<a[i].n<<endl;
+	}
+	getch();
+}
+					 l

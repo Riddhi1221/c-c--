@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a;
+	clrscr();
+	abc:
+	cout<<"Enter Number"<<endl;
+	cin>>a;
+	if(a%2!=0)
+	{
+		//cout<<"Even No"<<a<<endl;
+		goto abc;
+	}
+	else
+	{
+		cout<<"Even No"<<a<<endl;
+	}
+	getch();
+}

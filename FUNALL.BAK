@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<conio.h>
+int even(int i)
+{
+	if(i%2==0)
+	{
+		return 123;
+	}
+	else
+	{
+		return 456;
+	}
+}
+int pali(int n)
+{
+	int c,k=0,i;
+	i=n;
+	while(n!=0)
+	{
+		c=n%10;
+		k=k*10+c;
+		n=n/10;
+	}
+	if(i==k)
+	{
+		return 321;
+	}
+	else
+	{
+		return 654;
+	}
+}
+void main()
+{
+	int i,n;
+	clrscr();
+	i=even(1);
+	if(i==123)
+	{
+		printf("even no");
+	}
+	else
+	{
+		printf("odd no");
+	}
+	n=pali(121);
+	if(n==321)
+	{
+		printf("pali");
+	}
+	else
+	{
+		printf("not pali");
+	}
+	getch();
+
+}

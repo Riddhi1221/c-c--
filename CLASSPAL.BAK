@@ -1,0 +1,39 @@
+#include<iostream.h>
+#include<conio.h>
+class myPali
+{
+	public:
+	//int a;
+	int pali(int a)
+	{
+		int c,k=0,i;
+		i=a;
+		while(a!=0)
+		{
+			c=a%10;
+			k=k*10+c;
+			a=a/10;
+		}
+		return (i==k)?1:0;
+	}
+};
+void main()
+{
+	clrscr();
+	myPali m;
+	//m.a=121;
+	//cout<<m.a<<endl;
+	m.pali(121);
+	/*
+	if(m.pail())
+	{
+	    cout<<"pali no=>"<<endl;
+	}
+	else
+	{
+	    cout<<"not pali no=>"<<endl;
+	}
+	*/
+	getch();
+
+}

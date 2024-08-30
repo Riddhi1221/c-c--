@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a[10],i,n;
+	clrscr();
+	cout<<"Enter Array"<<endl;
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		cout<<"a["<<i<<"]=";
+		cin>>a[i];
+	}
+	cout<<endl;
+	for(i=0;i<n;i++)
+	{
+		cout<<"a["<<i<<"]="<<a[i]<<endl;
+	}
+	getch();
+
+}

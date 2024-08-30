@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	const pin=1234;
+	int upin=0;
+	clrscr();
+	//printf("Enter Your uPin=>");
+	//scanf("%d",&upin);
+	do
+	{
+		printf("Enter Pin=>");
+		scanf("%d",&upin);
+	}
+	while(upin != pin);
+	getch();
+}

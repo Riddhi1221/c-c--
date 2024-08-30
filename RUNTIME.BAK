@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+	public:
+	virtual void print()
+	{
+		cout<<"This is parent class"<<endl;
+	}
+	void test()
+	{
+		cout<<"THis is test function"<<endl;
+		print();
+	}
+};
+class child :public demo
+{
+	public:
+	void print()
+	{
+		cout<<"This is child class"<<endl;
+		//demo::print();
+	}
+};
+void main()
+{
+	clrscr();
+	child d;
+	//d.test();
+	d.demo::print();
+	getch();
+}

@@ -1,0 +1,75 @@
+/*
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct Test
+{
+	int a;
+	float b;
+	char c;
+	char d[10];
+};
+void printTest(struct Test t)
+{
+	printf("i:%d \n",t.a);
+	printf("b:%d \n",t.b);
+	printf("c:%d \n",t.c);
+	printf("d:%d \n",t.d);
+}
+void structTest(struct Test)
+{
+	t.a = 111;
+	t.b = 33.3;
+	t.c = 'b';
+	strcpy(t.d,"welcome");
+}
+void main()
+{
+
+	struct Test t;
+	clrscr();
+
+	t.a=111;
+	t.b=22.2;
+	t.c='a';
+	strcpy(t.d,"Hello");
+
+	printTest(t);
+
+	getch();
+}*/
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct Test
+{
+	int a;
+	float b;
+	char c;
+	char d[10];
+};
+void printTest(struct Test t)
+{
+	printf("a: %d \n", t.a);
+	printf("b: %f \n", t.b);
+	printf("c: %c \n", t.c);
+	printf("d: %s \n", t.d);
+}
+void structTest(struct Test *t)
+{
+	t->a = 111;
+	t->b = 33.3;
+	t->c = 'b';
+	strcpy(t->d, "welcome");
+	getch();
+}
+void main()
+{
+	struct Test t;
+	structTest(&t);
+	printTest(t);
+	clrscr();
+	return 0;
+}

@@ -1,0 +1,98 @@
+#include<iostream.h>
+#include<conio.h>
+class myClass
+{
+	public:
+	int e,h,g,total,per;
+	void rollno(int i)
+	{
+			cout<<"Roll no=>"<<i<<endl;
+	}
+	void eng()
+	{
+		cout<<"Enter english marks"<<endl;
+		cin>>e;
+	}
+	void hindi()
+	{
+		cout<<"Enter hindi marks"<<endl;
+		cin>>h;
+	}
+	void guj()
+	{
+		cout<<"Enter gujrati marks "<<endl;
+		cin>>g;
+	}
+	void total_mark()
+	{
+		cout<<"english "<<e<<endl<<"hindi "<<h<<endl<<"gujrati "<<g<<endl;
+		total=e+h+g;
+		cout<<"total marks "<<total<<endl;
+	}
+	void percentage()
+	{
+		per=total/3;
+		cout<<"per "<<per<<endl;
+	}
+	void min()
+	{
+		if(e<h && e<g)
+		{
+			cout<<"english is min ";
+		}
+		else if(h<g)
+		{
+			cout<<"hindi is min ";
+		}
+		else
+		{
+			cout<<"gujrati is min ";
+		}
+	}
+	void max()
+	{
+		if(e>h && e>g)
+		{
+			cout<<"english is max ";
+		}
+		else if(h>g)
+		{
+			cout<<"hindi is max ";
+		}
+		else
+		{
+			cout<<"gujrati is max ";
+		}
+	}
+};
+void main()
+{
+	clrscr();
+	int num;
+	myClass m[100];
+	cout<<"Enter student no"<<endl;
+	cin>>num;
+
+	int i;
+
+	for(i=0;i<=num;i++)
+	{
+		m[i].rollno(i+1);
+		m[i].eng();
+		m[i].hindi();
+		m[i].guj();
+	}
+	//cout<<endl;
+	cout<<"----------------------------------"<<endl;
+	for(i=0;i<=num;i++)
+	{
+		m[i].total_mark();
+		m[i].percentage();
+		m[i].min();
+		cout<<endl;
+		m[i].max();
+		cout<<endl<<"-------------------------------------"<<endl;
+		//cout<<endl<<"-------------------------------------"<<endl;
+	}
+	getch();
+}

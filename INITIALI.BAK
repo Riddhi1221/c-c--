@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+class myDemo
+{
+	public:
+	int a,b;
+	myDemo(int n,int m):a(n),b(m)
+	{
+		cout<<"a = "<<a<<endl<<"b = "<<b<<endl;
+	}
+};
+void main()
+{
+	clrscr();
+	myDemo d(10,100);
+	getch();
+}

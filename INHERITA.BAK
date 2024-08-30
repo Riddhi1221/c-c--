@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+class myClass
+{
+	public:
+	int a;
+	void print()
+	{
+		cout<<"Entar number = ";
+		cin>>a;
+	}
+};
+class demo : public myClass
+{
+	public:
+	void getdata()
+	{
+		cout<<"Enter a number ="<<a<<endl;
+	}
+};
+void main()
+{
+	clrscr();
+	demo m;
+	m.print();
+	m.getdata();
+	getch();
+}

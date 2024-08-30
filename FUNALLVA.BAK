@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int even(int a)
+{
+	if(a%2==0)
+	{
+		return 123;
+	}
+	else
+	{
+		return 456;
+	}
+}
+void main()
+{
+	int i;
+	clrscr();
+	i = even(10);
+	if(i == 123)
+	{
+		printf(even);
+	}
+	else
+	{
+		printf(odd);
+	}
+	getch();
+}
+

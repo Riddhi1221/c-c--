@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+class myClass
+{
+	public:
+	int a;
+	int b;
+	myClass()
+	{
+	cout<<"Enter a==";
+	cin>>a;
+	cout<<"Enter b==";
+	cin>>b;
+	cout<<endl;
+	}
+	myClass(myClass &m)
+	{
+		a=m.a;
+		b=m.b;
+	}
+};
+void main()
+{
+	clrscr();
+	myClass m;
+	myClass n(m);
+	cout<<"vlaue of a from n= "<<n.a;
+	cout<<endl;
+	cout<<"vlaue of b from n= "<<n.b;
+	getch();
+}

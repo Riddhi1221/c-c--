@@ -1,0 +1,13 @@
+#include<iostream.h>
+#include<conio.h>
+class demo
+{
+
+};
+void main()
+{
+	clrscr();
+	const int a=150;
+	cout<<"a="<<a;
+	getch();
+}

@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+void arm(int a)
+{
+	int c,k=0,n;
+	n=a;
+	while(a!=0)
+	{
+		c=a%10;
+		k=k+(c*c*c);
+		a=a/10;
+	}
+	if(n==k)
+	{
+		cout<<"arm no"<<endl;
+	}
+}
+void main()
+{
+	int a;
+	clrscr();
+	a=arm(153);
+	cout<<a<<endl;
+	getch();
+}

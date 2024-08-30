@@ -1,0 +1,33 @@
+#include<iostream.h>
+#include<conio.h>
+class parent
+{
+	public:
+	int a;
+	parent()
+	{
+		cout<<"This is parent class"<<endl;
+	}
+};
+class child : public parent
+{
+	public:
+	child()
+	{
+		cout<<"This is child class"<<endl;
+	}
+};
+class child2 : public child
+{
+	public:
+	child2()
+	{
+		cout<<"This is child2 class"<<endl;
+	}
+};
+void main()
+{
+	clrscr();
+	child2 c;
+	getch();
+}

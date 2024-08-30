@@ -1,0 +1,41 @@
+#include<iostream.h>
+#include<conio.h>
+class getvalue
+{
+	public:
+	int a,b;
+	getvalue()
+	{
+		cout<<"Enter number a"<<endl;
+		cin>>a;
+		cout<<"Enter number b"<<endl;
+		cin>>b;
+	}
+};
+class Mul : public getvalue
+{
+	public:
+	int mul;
+	Mul()
+	{
+		mul=a*b;
+		cout<<"mul number "<<mul<<endl;
+	}
+};
+class sum : public print
+{
+	public:
+	int total;
+	sum()
+	{
+		total=a+b;
+		cout<<"Total number is " <<total<<endl;
+	}
+};
+void main()
+{
+	clrscr();
+	Mul m;
+	//sum s;
+	getch();
+}
